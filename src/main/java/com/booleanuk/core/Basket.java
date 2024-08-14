@@ -31,7 +31,7 @@ public class Basket {
     }
 
     public boolean changeCapacity(int newCapcity, int userType) {
-        if (newCapcity < 0 || newCapcity < this.bagels.size()) return false;
+        if (newCapcity < 0 || newCapcity < this.bagels.size() || userType != 1) return false;
 
         this.capacity = newCapcity;
         return true;
