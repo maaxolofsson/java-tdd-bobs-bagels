@@ -15,4 +15,11 @@ class BasketTest {
         Assertions.assertTrue(b.add("testBagel"));
     }
 
+    @Test
+    public void testRemoveBagel() {
+        Basket b = new Basket();
+        b.add("test");
+        Assertions.assertTrue(b.remove("test"));
+    }
+
 }
