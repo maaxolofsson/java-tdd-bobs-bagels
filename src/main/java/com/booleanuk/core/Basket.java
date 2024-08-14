@@ -30,8 +30,11 @@ public class Basket {
         return this.bagels.size() == this.capacity;
     }
 
-    public void changeCapacity(int newCapcity, int userType) {
+    public boolean changeCapacity(int newCapcity, int userType) {
+        if (newCapcity < 0) return false;
+
         this.capacity = newCapcity;
+        return true;
     }
 
 }
