@@ -38,4 +38,25 @@ class BasketTest {
         Assertions.assertTrue(b.isFull());
     }
 
+    @Test
+    public void testChangeCapacity() {
+        Basket b = new Basket();
+        b.add("test");
+        b.add("test2");
+        b.add("test3");
+        b.add("test4");
+        b.add("test5");
+        b.add("test6");
+        b.add("test7");
+        b.add("test8");
+        b.add("test9");
+        b.add("test10");
+
+        Assertions.assertTrue(b.isFull());
+
+        b.changeCapacity(11, 0);
+
+        Assertions.assertFalse(b.isFull());
+    }
+
 }
