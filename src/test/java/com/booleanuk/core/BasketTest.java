@@ -66,4 +66,14 @@ class BasketTest {
         Assertions.assertFalse(b.changeCapacity(-1, 0));
     }
 
+    @Test
+    public void testChangeCapacityNotLessThanBagelsInBasket() {
+        Basket b = new Basket();
+
+        b.add("test");
+        b.add("test2");
+
+        Assertions.assertFalse(b.changeCapacity(1, 1));
+    }
+
 }
