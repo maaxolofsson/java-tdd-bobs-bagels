@@ -59,4 +59,11 @@ class BasketTest {
         Assertions.assertFalse(b.isFull());
     }
 
+    @Test
+    public void testChangeCapacityInputNotNegative() {
+        Basket b = new Basket();
+
+        Assertions.assertFalse(b.changeCapacity(-1, 0));
+    }
+
 }
