@@ -87,7 +87,7 @@ class BasketTest {
     public void testPublicCannotChangeBasketCapacity() {
         Basket b = new Basket();
 
-        Assertions.assertFalse(b.changeCapacity(20, 0));
+        Assertions.assertFalse(b.changeCapacity(20, 1));
     }
 
 }

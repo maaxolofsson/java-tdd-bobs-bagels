@@ -3,7 +3,7 @@
 Assuming that:
 
 - A userType of 0 is a Bob Bagel's manager
-- A userType of 1 is the public
+  - A userType of 1 is the public
 - Bagels are unique; there cannot be two or more of the same bagels in the same basket
 
 | Classes  | Methods                                         | Scenario                                       | Outputs |
