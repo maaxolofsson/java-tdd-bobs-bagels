@@ -23,6 +23,13 @@ class BasketTest {
     }
 
     @Test
+    public void testRemoveBagelNotExisting() {
+        Basket b = new Basket();
+
+        Assertions.assertFalse(b.remove("test"));
+    }
+
+    @Test
     public void testIsBasketFull() {
         Basket b = new Basket();
         b.add("test");
