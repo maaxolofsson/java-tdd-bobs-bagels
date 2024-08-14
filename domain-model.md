@@ -14,4 +14,5 @@ Assuming that:
 |          |                                                 | Failed to remove from basket                   | false   |
 |          | `isFull()`                                      | Basket is full                                 | true    |
 |          |                                                 | Basket is not full                             | false   |
-|          | `changeCapacity(int newCapacity, int userType)` | Changing th Basket's capacity                  | -       |
+|          | `changeCapacity(int newCapacity, int userType)` | Successfully changed capacity of baskets       | true    |
+|          |                                                 | Failed to change capacity of baskets           | false   |
