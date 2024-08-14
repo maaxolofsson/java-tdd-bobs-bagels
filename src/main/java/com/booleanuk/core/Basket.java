@@ -26,4 +26,8 @@ public class Basket {
         return this.bagels.remove(bagel);
     }
 
+    public boolean isFull() {
+        return this.bagels.size() == this.capacity;
+    }
+
 }
